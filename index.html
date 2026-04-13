@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to Spectra|Charlize Angeles,2026</title>
+<style type="text/css">
+body {
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("images/2.jpg");
+    padding-left: 0.2em;
+    text-align: left;
+}
+wrapper {
+    width: 1366px;
+    display: block;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: medium;
+}
+header {
+    background-color: #000D13;
+    margin-top: -19px;
+    margin-right: -19px;
+    margin-bottom: -19px;
+    margin-left: -19px;
+    background-position: center center;
+    text-align: center;
+}
+}
+.Tabs1 {
+    align-content: center;
+    padding-left: 38px;
+    margin-left: 50px;
+}
+#Tabs1 #tabs-1 p {
+    text-align: center;
+}
+#Tabs1 #tabs-1 {
+    padding-left: 0.2px;
+    padding-top: 0.2px;
+    padding-right: 0.2px;
+    padding-bottom: 0.2px;
+}
+.ui-tabs-nav.ui-helper-clearfix.ui-widget-header .ui-state-default.ui-corner-top a {
+    background-image: url(icons/airplane_icon.png);
+}
+.ui-state-default.ui-corner-top a img {
+    background-image: -webkit-linear-gradient(270deg, rgba(121,117,212,1.00) 0%, rgba(8,31,41,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg, rgba(121,117,212,1.00) 0%, rgba(8,31,41,1.00) 100%);
+    background-image: -o-linear-gradient(270deg, rgba(121,117,212,1.00) 0%, rgba(8,31,41,1.00) 100%);
+    background-image: linear-gradient(180deg, rgba(121,117,212,1.00) 0.00%, rgba(8,31,41,1.00) 100%);
+    background-repeat: no-repeat;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.autocomplete.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.menu.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.autocomplete.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+</head>
+
+<body>
+<header> <img id= "logo" src="icons/spectra_logo.png" width="1080" height="182" alt=""/> </header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="icons/airplane_icon.png" width="80" height="80" alt=""/>Flights</a></li>
+      <li><a href="#tabs-2"><img src="icons/cruise_icon.png" width="80" height="80" alt=""/>Cruises</a></li>
+      <li><a href="#tabs-3"><img src="icons/rentals_icon.png" width="80" height="80" alt=""/>cars</a></li>
+      <li><a href="#tabs-4"><img src="icons/activites_icon.png" width="80" height="80" alt=""/>Activites</a></li>
+      <li><a href="#tabs-5"><img src="icons/hotel_icon.png" width="80" height="80" alt=""/>Hotels</a></li>
+    </ul>
+    <div id="tabs-1">
+      <section class= "rt-button">ROUND TRIP</section>
+      <section class="flyout-sect">
+        <p class= "flyin-text">FLYING FROM</p>
+        <input class= "flyin-input" type= "text" placeholder="City or Airport">
+      </section>
+      <section class= "flyin-sect">
+        <p class= "arrival-text">FLYING TO</p>
+        <input class= "arrival-input" type= "text" placeholder= "City or Airport">
+      </section>
+      <section class="departing-sect">
+        <p class= "depart-text">DEPARTING </p>
+        <br>
+        <input type="text" id="departing-picker" placeholder="mm/dd/yyyy">
+      </section>
+      <section class="arrive-sect">
+        <p class="arrive-text"> ARRIVING</p>
+        <input type="text" id="arriving-picker" placeholder="mm/dd/yyyy">
+      </section>
+      <br>
+      <br>
+      <br>
+      <select>
+        <br>
+        <option value= "0"> Number of Travelers</option>
+        <option value="1"> 1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+      </select>
+      <input id="submit" name="submit" type= "submit">
+    </div>
+    <div id="tabs-2"> <br>
+<section class= "dp-sail-sect"> 
+          <p class= "sailing-from-txt"> SAILING FROM</p>
+        <input class="departing-sail" type="text" placeholder= "Select Destination">
+        </section>
+        <section class= "ar-sail-sect">
+        <p class= "arrival-sail-txt">SAILING TO</p>
+            <input class= "arriving-sail" type="text" placeholder="Select Destination">
+        </section>
+        <section class="departing-sect">
+        <p class= "depart-text">DEPARTING </p>
+        <br>
+        <input type="text" id="departing-picker2" placeholder="mm/dd/yyyy">
+      </section>
+      <section class="arrive-sect">
+        <p class="arrive-text"> ARRIVING</p>
+        <input type="text" id="arriving-picker2" placeholder="mm/dd/yyyy">
+      </section>
+      <br>
+      <br>
+      <br>
+      <select>
+        <br>
+        <option value= "0"> Number of Travelers</option>
+        <option value="1"> 1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+      </select>
+      <input id="submit2" name="submit" type= "submit">
+    </div>
+    <div id="tabs-3">
+        <section class= "pickingup-sect">
+      <p class= "car-txt-pickingup">Picking up</p>
+        <input type= "text" class= "pickinguptxtbox" placeholder="Pickup Address">
+        </section>
+      <section class="droppingoff-sect">
+        <p class= "car-txt-dropoff">Dropping off</p>
+            <input type ="text" class= "dropofftxtbox" placeholder="Drop off Address">
+            
+            
+        </section>
+        <br>
+        <input id= "date" type= "date" name="date">
+        <input id="time" type= "time" name="time">
+        <input id="submit3" name= "submit" type="submit">
+        
+    </div>
+    <div id="tabs-4">
+        <section class="activities section">
+      <p class="activity-head">Destination</p>
+             <input type= "text" class= "act-dest-txt" placeholder="City">
+        </section>
+        <section class= "act-from-txt">
+     <p class= "aft-i">From</p>
+            <input id="date4" type= "date" name= "date">
+            </section>
+            <section class="aft-sect2">
+            <p class= "aft-i">to</p>
+                <input id="date4.2" type= "date" name= "date">
+        </section>
+        <br> <br>
+      <button id="search">Search</button>
+    </div>
+    <div id="tabs-5">
+        <section class= "hotel-sect"> 
+      <p class= "hotel-stay">Going To</p>
+    <input id= "hotel-stay-txt" type="text" placeholder="Destination,Hotel name, Airport,Trainstation, Landmark, Or Address">
+            </section>
+        <section class= "hotel-check in">
+        <p class="chk-in-txt">Check In</p>
+            <input id="date5" type= "date" name= "date">
+            </section>
+            <section class= "hotel-check out"> 
+            <p class= "chk-out-txt">Check Out</p>
+            <input id="date6" type= "date" name= "date">
+        </section>
+    
+        <br>
+        <input id="submit4" name= "submit" type="submit">
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Autocomplete1" ).autocomplete(); 
+});
+$(function() {
+	$( "#Datepicker1" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepicker2" ).datepicker(); 
+});
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
+</body>
+</html>
